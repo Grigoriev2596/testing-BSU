@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageobject_model.page.TravelataHomePage;
 
+import java.sql.Driver;
 import java.time.Duration;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class WebDriverTravelataTest {
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("start-maximized");
 //        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
     }
 
 
