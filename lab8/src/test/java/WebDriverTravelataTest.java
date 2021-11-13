@@ -22,7 +22,7 @@ public class WebDriverTravelataTest {
     @BeforeMethod (alwaysRun = true)
     public void browserSetup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--kiosk");
+        options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
     }
 
