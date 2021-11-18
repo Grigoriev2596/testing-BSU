@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TravelataSearchResultPage {
 
@@ -24,17 +25,12 @@ public class TravelataSearchResultPage {
         this.touristAmount = touristAmount;
     }
 
-    public boolean ifAllTourAreSuitsForTouristAmount() {
+    public List<String> getTourInformationCards() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.className(TOUR_INFORMATION_CARD_CLASSNAME)));
-        List<WebElement> tourInformationCards = driver.findElements(By.className(TOUR_INFORMATION_CARD_CLASSNAME));
-
-        for(WebElement card : tourInformationCards) {
-            if (!card.getText().contains(touristAmount + " взрослы")) {
-                return false;
-            }
-        }
-        return true;
+        return driver.findElements(By.className(TOUR_INFORMATION_CARD_CLASSNAME)).stream()
+                .map((webEl) -> webEl.getText())
+                .collect(Collectors.toList());
     }
 
 

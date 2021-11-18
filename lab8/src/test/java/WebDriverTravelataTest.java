@@ -1,17 +1,12 @@
-import org.openqa.selenium.*;
+import org.assertj.core.api.Assertions;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageobject_model.page.TravelataHomePage;
 
-import java.sql.Driver;
-import java.time.Duration;
 import java.util.List;
 
 public class WebDriverTravelataTest {
@@ -19,6 +14,8 @@ public class WebDriverTravelataTest {
     private WebDriver driver;
 
     private final static int TOURIST_AMOUNT = 4;
+
+    private final static String ADULT_KEYWORD_WITHOUT_ENDING = "взрослы";
 
     @BeforeMethod (alwaysRun = true)
     public void browserSetup() {
@@ -33,14 +30,14 @@ public class WebDriverTravelataTest {
     @Test
     public void SearchResultSuitsForParticularAmountOfTourists() throws InterruptedException {
 
-        boolean expected = new TravelataHomePage(driver, TOURIST_AMOUNT)
+        List<String> tourInformationCards = new TravelataHomePage(driver, TOURIST_AMOUNT)
                 .openPage()
                 .openDropDownTouristControlForm()
                 .selectTouristAmount()
                 .search()
-                .ifAllTourAreSuitsForTouristAmount();
+                .getTourInformationCards();
 
-        Assert.assertTrue(expected, "Tours are not suitable for four people");
+        Assertions.assertThat(tourInformationCards).filteredOn(text -> text.contains(TOURIST_AMOUNT + " " + ADULT_KEYWORD_WITHOUT_ENDING));
     }
 
     @AfterMethod (alwaysRun = true)
