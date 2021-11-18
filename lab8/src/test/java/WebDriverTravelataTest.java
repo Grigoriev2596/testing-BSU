@@ -7,13 +7,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageobject_model.page.TravelataHomePage;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class WebDriverTravelataTest {
 
     private WebDriver driver;
 
-    private final static int TOURIST_AMOUNT = 4;
+    private final static int TOURIST_AMOUNT = 1;
 
     private final static String ADULT_KEYWORD_WITHOUT_ENDING = "взрослы";
 
@@ -36,8 +37,7 @@ public class WebDriverTravelataTest {
                 .selectTouristAmount()
                 .search()
                 .getTourInformationCards();
-
-        Assertions.assertThat(tourInformationCards).filteredOn(text -> text.contains(TOURIST_AMOUNT + " " + ADULT_KEYWORD_WITHOUT_ENDING));
+        Assertions.assertThat(tourInformationCards).allSatisfy(text -> Assertions.assertThat(text).contains(TOURIST_AMOUNT + " " + ADULT_KEYWORD_WITHOUT_ENDING));
     }
 
     @AfterMethod (alwaysRun = true)

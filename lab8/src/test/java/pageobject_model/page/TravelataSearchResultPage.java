@@ -26,7 +26,7 @@ public class TravelataSearchResultPage {
     }
 
     public List<String> getTourInformationCards() {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(15))
                 .until(ExpectedConditions.presenceOfElementLocated(By.className(TOUR_INFORMATION_CARD_CLASSNAME)));
         return driver.findElements(By.className(TOUR_INFORMATION_CARD_CLASSNAME)).stream()
                 .map((webEl) -> webEl.getText())

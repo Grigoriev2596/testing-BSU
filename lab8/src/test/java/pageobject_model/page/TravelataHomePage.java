@@ -14,8 +14,8 @@ public class TravelataHomePage {
     private WebDriver driver;
 
 
-    private static final String DROP_DOWN_TOURIST_CONTROL_FORM_X_PATH = "/html/body/section/div/div[1]/div[2]/div/div[1]/form/div[5]/div";
-    private static final String TOURIST_AMOUNT_BUTTON_X_PATH = "//*[@id=\"mainSearchForm\"]/div[5]/div/div[2]/div/div/div[2]/div/label[%s]";
+    private static final String DROP_DOWN_TOURIST_CONTROL_FORM_X_PATH = "//div[contains(@class, 'formDropdown touristGroup')]";
+    private static final String TOURIST_AMOUNT_BUTTON_X_PATH = "//*[@id=\"mainSearchForm\"]/div[5]/div/div[2]/div/div/div[2]/div/label[1]";
     private static final String SEARCH_BUTTON_x_PATH = "//*[@id=\"startSearch\"]";
 
     public TravelataHomePage(WebDriver driver, int touristAmount) {
