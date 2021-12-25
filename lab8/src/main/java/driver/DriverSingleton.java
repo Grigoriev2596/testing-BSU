@@ -24,6 +24,8 @@ public class DriverSingleton {
                     WebDriverManager.chromedriver().driverVersion("96.0.4664.45").setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless");
+                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--start-maximized");
                     driver = new ChromeDriver(options);
                 }
             }
