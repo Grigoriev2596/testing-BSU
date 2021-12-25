@@ -3,6 +3,7 @@ package driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
@@ -21,7 +22,9 @@ public class DriverSingleton {
                 }
                 default: {
                     WebDriverManager.chromedriver().driverVersion("96.0.4664.45").setup();
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    driver = new ChromeDriver(options);
                 }
             }
             driver.manage().window().maximize();
