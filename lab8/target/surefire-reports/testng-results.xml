@@ -2,108 +2,108 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-26T18:48:14Z" name="Command line suite" finished-at="2021-12-26T18:49:07Z" duration-ms="52614">
+  <suite started-at="2021-12-26T19:18:27Z" name="Command line suite" finished-at="2021-12-26T19:19:20Z" duration-ms="53214">
     <groups>
     </groups>
-    <test started-at="2021-12-26T18:48:14Z" name="Command line test" finished-at="2021-12-26T18:49:07Z" duration-ms="52614">
+    <test started-at="2021-12-26T19:18:27Z" name="Command line test" finished-at="2021-12-26T19:19:20Z" duration-ms="53214">
       <class name="TravelataRussiaPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:40Z" name="setUp" finished-at="2021-12-26T18:48:41Z" duration-ms="1121" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:18:53Z" name="setUp" finished-at="2021-12-26T19:18:54Z" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="choosenDirectionEqualsToDispayedDirection()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:41Z" name="choosenDirectionEqualsToDispayedDirection" finished-at="2021-12-26T18:48:45Z" duration-ms="3691" status="PASS">
+        <test-method signature="choosenDirectionEqualsToDispayedDirection()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:18:54Z" name="choosenDirectionEqualsToDispayedDirection" finished-at="2021-12-26T19:18:57Z" duration-ms="2916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- choosenDirectionEqualsToDispayedDirection -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:45Z" name="stopBrowser" finished-at="2021-12-26T18:48:46Z" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:18:57Z" name="stopBrowser" finished-at="2021-12-26T19:18:58Z" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:46Z" name="setUp" finished-at="2021-12-26T18:48:47Z" duration-ms="1045" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:18:58Z" name="setUp" finished-at="2021-12-26T19:18:59Z" duration-ms="1035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="filteringTourByDirection()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:47Z" name="filteringTourByDirection" finished-at="2021-12-26T18:48:53Z" duration-ms="6322" status="PASS">
+        <test-method signature="filteringTourByDirection()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:18:59Z" name="filteringTourByDirection" finished-at="2021-12-26T19:19:05Z" duration-ms="6010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filteringTourByDirection -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T18:48:54Z" name="stopBrowser" finished-at="2021-12-26T18:48:54Z" duration-ms="568" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataRussiaPageTest@636be97c]" started-at="2021-12-26T19:19:05Z" name="stopBrowser" finished-at="2021-12-26T19:19:06Z" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- TravelataRussiaPageTest -->
       <class name="TravelataSearchPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:48:54Z" name="setUp" finished-at="2021-12-26T18:48:55Z" duration-ms="1101" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:06Z" name="setUp" finished-at="2021-12-26T19:19:07Z" duration-ms="1061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkCorrectFilteringHotelsBySeaLine()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:48:55Z" name="checkCorrectFilteringHotelsBySeaLine" finished-at="2021-12-26T18:49:00Z" duration-ms="4281" status="PASS">
+        <test-method signature="checkCorrectFilteringHotelsBySeaLine()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:07Z" name="checkCorrectFilteringHotelsBySeaLine" finished-at="2021-12-26T19:19:12Z" duration-ms="4841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCorrectFilteringHotelsBySeaLine -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:49:00Z" name="stopBrowser" finished-at="2021-12-26T18:49:00Z" duration-ms="571" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:12Z" name="stopBrowser" finished-at="2021-12-26T19:19:13Z" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:49:00Z" name="setUp" finished-at="2021-12-26T18:49:01Z" duration-ms="1057" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:13Z" name="setUp" finished-at="2021-12-26T19:19:14Z" duration-ms="1098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkCorrectFilteringToursByBestHotelRating()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:49:01Z" name="checkCorrectFilteringToursByBestHotelRating" finished-at="2021-12-26T18:49:06Z" duration-ms="4481" status="PASS">
+        <test-method signature="checkCorrectFilteringToursByBestHotelRating()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:14Z" name="checkCorrectFilteringToursByBestHotelRating" finished-at="2021-12-26T19:19:20Z" duration-ms="5809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCorrectFilteringToursByBestHotelRating -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T18:49:06Z" name="stopBrowser" finished-at="2021-12-26T18:49:07Z" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataSearchPageTest@50a638b5]" started-at="2021-12-26T19:19:20Z" name="stopBrowser" finished-at="2021-12-26T19:19:20Z" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- TravelataSearchPageTest -->
       <class name="TravelataHomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:14Z" name="setUp" finished-at="2021-12-26T18:48:16Z" duration-ms="1520" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:27Z" name="setUp" finished-at="2021-12-26T19:18:29Z" duration-ms="1538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkChangingCityCorrectness()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:16Z" name="checkChangingCityCorrectness" finished-at="2021-12-26T18:48:18Z" duration-ms="2684" status="PASS">
+        <test-method signature="checkChangingCityCorrectness()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:29Z" name="checkChangingCityCorrectness" finished-at="2021-12-26T19:18:32Z" duration-ms="2781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkChangingCityCorrectness -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:19Z" name="stopBrowser" finished-at="2021-12-26T18:48:19Z" duration-ms="557" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:32Z" name="stopBrowser" finished-at="2021-12-26T19:18:32Z" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:19Z" name="setUp" finished-at="2021-12-26T18:48:20Z" duration-ms="1062" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:32Z" name="setUp" finished-at="2021-12-26T19:18:34Z" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkMailingSubscriptionMessageWithCorrectEmail()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:20Z" name="checkMailingSubscriptionMessageWithCorrectEmail" finished-at="2021-12-26T18:48:24Z" duration-ms="3707" status="PASS">
+        <test-method signature="checkMailingSubscriptionMessageWithCorrectEmail()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:34Z" name="checkMailingSubscriptionMessageWithCorrectEmail" finished-at="2021-12-26T19:18:37Z" duration-ms="3941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMailingSubscriptionMessageWithCorrectEmail -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:24Z" name="stopBrowser" finished-at="2021-12-26T18:48:25Z" duration-ms="569" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:38Z" name="stopBrowser" finished-at="2021-12-26T19:18:38Z" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:25Z" name="setUp" finished-at="2021-12-26T18:48:26Z" duration-ms="1063" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:38Z" name="setUp" finished-at="2021-12-26T19:18:39Z" duration-ms="1046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkTheIncorrectLogin()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:26Z" name="checkTheIncorrectLogin" finished-at="2021-12-26T18:48:31Z" duration-ms="5065" status="PASS">
+        <test-method signature="checkTheIncorrectLogin()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:39Z" name="checkTheIncorrectLogin" finished-at="2021-12-26T19:18:45Z" duration-ms="5247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheIncorrectLogin -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:31Z" name="stopBrowser" finished-at="2021-12-26T18:48:32Z" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:45Z" name="stopBrowser" finished-at="2021-12-26T19:18:45Z" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:32Z" name="setUp" finished-at="2021-12-26T18:48:33Z" duration-ms="1098" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:45Z" name="setUp" finished-at="2021-12-26T19:18:46Z" duration-ms="1092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchResultSuitsForParticularAmountOfTourists()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:33Z" name="searchResultSuitsForParticularAmountOfTourists" finished-at="2021-12-26T18:48:39Z" duration-ms="6280" status="PASS">
+        <test-method signature="searchResultSuitsForParticularAmountOfTourists()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:46Z" name="searchResultSuitsForParticularAmountOfTourists" finished-at="2021-12-26T19:18:52Z" duration-ms="5808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultSuitsForParticularAmountOfTourists -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T18:48:40Z" name="stopBrowser" finished-at="2021-12-26T18:48:40Z" duration-ms="577" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TravelataHomePageTest@3f197a46]" started-at="2021-12-26T19:18:52Z" name="stopBrowser" finished-at="2021-12-26T19:18:53Z" duration-ms="553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
