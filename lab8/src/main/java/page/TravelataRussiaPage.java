@@ -14,8 +14,6 @@ public class TravelataRussiaPage extends AbstractPage{
     private static final String TYPE_NAME_SELECTOR = ".js-tourFilter__item > .icon.icon-rtype_i16_ski + span";
     private static final String DISPLAYED_TYPE_NAME_SELECTOR = ".js-selected-rest-type-label";
 
-    private final Logger logger = LogManager.getRootLogger();
-
     public TravelataRussiaPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);

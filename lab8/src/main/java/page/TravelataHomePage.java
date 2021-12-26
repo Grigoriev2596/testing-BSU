@@ -24,8 +24,6 @@ public class TravelataHomePage extends AbstractPage {
     private static final String CHOOSE_CITY_BUTTON_SELECTOR = "[title='Омск']";
     private static final String CURRENT_CITY_VALUE_SELECTOR = "[title='Омск'] > span";
 
-    private final Logger logger = LogManager.getRootLogger();
-
     public TravelataHomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);

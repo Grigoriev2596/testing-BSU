@@ -15,8 +15,6 @@ public class TravelataHolidayPage extends AbstractPage{
     private static final String HOLIDAY_DIRECTION_NAME_SELECTOR = ".h3";
     private static final String HOLIDAY_DIRECTION_SELECTOR = ".cityPreview.js-city-preview";
 
-    private final Logger logger = LogManager.getRootLogger();
-
     public TravelataHolidayPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);

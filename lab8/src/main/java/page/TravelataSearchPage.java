@@ -22,8 +22,6 @@ public class TravelataSearchPage extends AbstractPage{
     private static final String ACTUAL_HOTELS_RATING_SELECTOR = ".serpHotelCard__tip.serpHotelCard__rating";
     private static final String TOUR_DIRECTION_NAME_SELECTOR = ".serpHotelCard__resort.goToHotel.distance";
 
-    private final Logger logger = LogManager.getRootLogger();
-
     public TravelataSearchPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
