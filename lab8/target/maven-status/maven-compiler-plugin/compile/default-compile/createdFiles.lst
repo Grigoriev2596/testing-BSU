@@ -1,7 +1,11 @@
 utils\TestListener.class
+utils\Wait.class
 page\TravelataHomePage.class
+page\TravelataSearchPage.class
+page\TravelataRussiaPage.class
+service\UserCreator.class
+page\TravelataHolidayPage.class
 service\TestDataReader.class
 driver\DriverSingleton.class
 page\AbstractPage.class
-page\TravelataSearchResultPage.class
-waits\Waits.class
+model\User.class

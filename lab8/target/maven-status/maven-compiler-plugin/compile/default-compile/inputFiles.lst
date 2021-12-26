@@ -1,7 +1,11 @@
-D:\vlad lab qa\webdriver\src\main\java\service\TestDataReader.java
-D:\vlad lab qa\webdriver\src\main\java\page\TravelataHomePage.java
-D:\vlad lab qa\webdriver\src\main\java\waits\Waits.java
-D:\vlad lab qa\webdriver\src\main\java\utils\TestListener.java
-D:\vlad lab qa\webdriver\src\main\java\page\TravelataSearchResultPage.java
-D:\vlad lab qa\webdriver\src\main\java\driver\DriverSingleton.java
-D:\vlad lab qa\webdriver\src\main\java\page\AbstractPage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\driver\DriverSingleton.java
+F:\QA rep\testing-BSU\lab8\src\main\java\page\TravelataRussiaPage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\utils\Wait.java
+F:\QA rep\testing-BSU\lab8\src\main\java\page\AbstractPage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\model\User.java
+F:\QA rep\testing-BSU\lab8\src\main\java\utils\TestListener.java
+F:\QA rep\testing-BSU\lab8\src\main\java\page\TravelataHolidayPage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\page\TravelataSearchPage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\service\UserCreator.java
+F:\QA rep\testing-BSU\lab8\src\main\java\page\TravelataHomePage.java
+F:\QA rep\testing-BSU\lab8\src\main\java\service\TestDataReader.java
