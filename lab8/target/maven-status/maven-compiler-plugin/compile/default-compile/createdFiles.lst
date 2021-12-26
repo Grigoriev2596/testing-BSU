@@ -1,4 +1,5 @@
 utils\TestListener.class
+service\CityReader.class
 utils\Wait.class
 page\TravelataHomePage.class
 page\TravelataSearchPage.class
@@ -6,6 +7,7 @@ page\TravelataRussiaPage.class
 service\UserCreator.class
 page\TravelataHolidayPage.class
 service\TestDataReader.class
+service\EmailReader.class
 driver\DriverSingleton.class
 page\AbstractPage.class
 model\User.class
