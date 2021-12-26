@@ -19,6 +19,8 @@ public class TravelataHomePageTest extends CommonConditions{
 
     private final static String SUCCESS_MAILING_SUBSCRIBE_MESSAGE = "Вы успешно подписались";
 
+    private final static String CITY = "Омск";
+
     @Test
     public void checkTheIncorrectLogin() {
 
@@ -56,14 +58,12 @@ public class TravelataHomePageTest extends CommonConditions{
 
     @Test
     public void checkChangingCityCorrectness() {
-        String expectedCityValue = CityReader.getCity();
-
         String actualCityValue = new TravelataHomePage(driver)
                 .openPage()
                 .openDropDownCitiesList()
-                .chooseCity()
+                .chooseCity(CITY)
                 .getCurrentCityValue();
-        Assert.assertEquals(actualCityValue, expectedCityValue);
+        Assert.assertEquals(actualCityValue, CITY);
     }
 
 

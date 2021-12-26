@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="TestSuite" time="40.537" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="TestSuite" time="71.344" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
@@ -70,12 +70,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TravelataHomePageTest" name="checkChangingCityCorrectness" time="3.284"/>
-  <testcase classname="TravelataHomePageTest" name="checkMailingSubscriptionMessageWithCorrectEmail" time="4.116"/>
-  <testcase classname="TravelataHomePageTest" name="checkTheIncorrectLogin" time="4.772"/>
-  <testcase classname="TravelataHomePageTest" name="searchResultSuitsForParticularAmountOfTourists" time="6.246"/>
-  <testcase classname="TravelataRussiaPageTest" name="choosenDirectionEqualsToDispayedDirection" time="5.733"/>
-  <testcase classname="TravelataRussiaPageTest" name="filteringTourByDirection" time="6.912"/>
-  <testcase classname="TravelataSearchPageTest" name="checkCorrectFilteringHotelsBySeaLine" time="4.851"/>
-  <testcase classname="TravelataSearchPageTest" name="checkCorrectFilteringToursByBestHotelRating" time="4.623"/>
+  <testcase classname="TravelataHomePageTest" name="checkChangingCityCorrectness" time="3.102"/>
+  <testcase classname="TravelataHomePageTest" name="checkMailingSubscriptionMessageWithCorrectEmail" time="4.276"/>
+  <testcase classname="TravelataHomePageTest" name="checkTheIncorrectLogin" time="6.628"/>
+  <testcase classname="TravelataHomePageTest" name="searchResultSuitsForParticularAmountOfTourists" time="5.408"/>
+  <testcase classname="TravelataRussiaPageTest" name="choosenDirectionEqualsToDispayedDirection" time="34.327"/>
+  <testcase classname="TravelataRussiaPageTest" name="filteringTourByDirection" time="8.004"/>
+  <testcase classname="TravelataSearchPageTest" name="checkCorrectFilteringHotelsBySeaLine" time="5.139"/>
+  <testcase classname="TravelataSearchPageTest" name="checkCorrectFilteringToursByBestHotelRating" time="4.46"/>
 </testsuite>

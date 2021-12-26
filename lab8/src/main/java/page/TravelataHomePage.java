@@ -21,8 +21,8 @@ public class TravelataHomePage extends AbstractPage {
     private static final String MAILING_INPUT_SELECTOR = "[name='email']";
     private static final String MAILING_SUCCESS_MESSAGE_SELECTOR = ".success-block__title";
     private static final String OPEN_DROPDOWN_CITIES_LIST_BUTTON_SELECTOR = ".region";
-    private static final String CHOOSE_CITY_BUTTON_SELECTOR = "[title='Омск']";
-    private static final String CURRENT_CITY_VALUE_SELECTOR = "[title='Омск'] > span";
+    private static String chooseCityButtonSelector = "[title='%s']";
+    private static String currentCityValueSelector = "> span";
 
     public TravelataHomePage(WebDriver driver) {
         super(driver);
@@ -41,15 +41,17 @@ public class TravelataHomePage extends AbstractPage {
         return this;
     }
 
-    public TravelataHomePage chooseCity() {
+    public TravelataHomePage chooseCity(String city) {
         logger.info("click on particular city");
-        Wait.presenceOfElementLocatedWaitBySelector(driver, CHOOSE_CITY_BUTTON_SELECTOR);
+        chooseCityButtonSelector = String.format(chooseCityButtonSelector, city);
+        Wait.presenceOfElementLocatedWaitBySelector(driver, chooseCityButtonSelector);
         return this;
     }
 
     public String getCurrentCityValue() {
         logger.info("getting city that displayed on a page");
-        return Wait.presenceOfElementLocatedWaitBySelector(driver,CURRENT_CITY_VALUE_SELECTOR).getText();
+        currentCityValueSelector = chooseCityButtonSelector + currentCityValueSelector;
+        return Wait.presenceOfElementLocatedWaitBySelector(driver,currentCityValueSelector).getText();
     }
 
     public TravelataHomePage openDropDownTouristControlForm() {
