@@ -1,8 +1,8 @@
 *.db
 *.log
-target/
+/target
 bin/
-idea/
+/idea
 *.iml
 *idea/
 **/*idea/

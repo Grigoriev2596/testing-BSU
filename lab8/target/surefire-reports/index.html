@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataSearchPageTest" class="method navigator-link" hash-for-method="checkCorrectFilteringHotelsBySeaLine">checkCorrectFilteringHotelsBySeaLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataSearchPageTest" class="method navigator-link" hash-for-method="checkCorrectFilteringToursByBestHotelRating">checkCorrectFilteringToursByBestHotelRating</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataHomePageTest" class="method navigator-link" hash-for-method="searchResultSuitsForParticularAmountOfTourists">searchResultSuitsForParticularAmountOfTourists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,16 +127,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="TravelataHomePageTest" class="method navigator-link" hash-for-method="checkChangingCityCorrectness">checkChangingCityCorrectness</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataSearchPageTest" class="method navigator-link" hash-for-method="checkCorrectFilteringHotelsBySeaLine">checkCorrectFilteringHotelsBySeaLine</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataSearchPageTest" class="method navigator-link" hash-for-method="checkCorrectFilteringToursByBestHotelRating">checkCorrectFilteringToursByBestHotelRating</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,11 +149,6 @@
                         <a href="#" panel-name="suite-Command_line_suite" title="TravelataRussiaPageTest" class="method navigator-link" hash-for-method="filteringTourByDirection">filteringTourByDirection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="TravelataHomePageTest" class="method navigator-link" hash-for-method="searchResultSuitsForParticularAmountOfTourists">searchResultSuitsForParticularAmountOfTourists</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
@@ -152,6 +161,88 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TravelataSearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCorrectFilteringHotelsBySeaLine">
+                  </a> <!-- checkCorrectFilteringHotelsBySeaLine -->
+                  <span class="method-name">checkCorrectFilteringHotelsBySeaLine</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .thirdLine &gt; .checkbox &gt; .checkboxStyle (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IBP3IHB&apos;, ip: &apos;26.216.94.229&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\egor2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9e5a577ccaa8c4a74e4b3bc572b8cd3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utils.Wait.elementToBeClickableWaitBySelector(Wait.java:36)
+	at page.TravelataSearchPage.chooseSeaLine(TravelataSearchPage.java:38)
+	at TravelataSearchPageTest.checkCorrectFilteringHotelsBySeaLine(TravelataSearchPageTest.java:18)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCorrectFilteringToursByBestHotelRating">
+                  </a> <!-- checkCorrectFilteringToursByBestHotelRating -->
+                  <span class="method-name">checkCorrectFilteringToursByBestHotelRating</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .best &gt; .filtersList__item &gt; label (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IBP3IHB&apos;, ip: &apos;26.216.94.229&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\egor2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e975240b4ce7df5e0287abd708d93304
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utils.Wait.elementToBeClickableWaitBySelector(Wait.java:36)
+	at page.TravelataSearchPage.chooseBestRatingHotelsCheckbox(TravelataSearchPage.java:44)
+	at TravelataSearchPageTest.checkCorrectFilteringToursByBestHotelRating(TravelataSearchPageTest.java:29)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TravelataHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchResultSuitsForParticularAmountOfTourists">
+                  </a> <!-- searchResultSuitsForParticularAmountOfTourists -->
+                  <span class="method-name">searchResultSuitsForParticularAmountOfTourists</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label for=&quot;adults__buttonset_view...391&quot;&gt;1&lt;/label&gt; is not clickable at point (604, 569). Other element would receive the click: &lt;div class=&quot;chatWidget js-open-intercom-chat&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IBP3IHB&apos;, ip: &apos;26.216.94.229&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\egor2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1538c39bae30890fa82d009337223fb
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page.TravelataHomePage.selectTouristAmount(TravelataHomePage.java:66)
+	at TravelataHomePageTest.searchResultSuitsForParticularAmountOfTourists(TravelataHomePageTest.java:42)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -170,28 +261,6 @@
                   <a name="filteringTourByDirection">
                   </a> <!-- filteringTourByDirection -->
                   <span class="method-name">filteringTourByDirection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TravelataSearchPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkCorrectFilteringHotelsBySeaLine">
-                  </a> <!-- checkCorrectFilteringHotelsBySeaLine -->
-                  <span class="method-name">checkCorrectFilteringHotelsBySeaLine</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkCorrectFilteringToursByBestHotelRating">
-                  </a> <!-- checkCorrectFilteringToursByBestHotelRating -->
-                  <span class="method-name">checkCorrectFilteringToursByBestHotelRating</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,13 +290,6 @@
                   <a name="checkTheIncorrectLogin">
                   </a> <!-- checkTheIncorrectLogin -->
                   <span class="method-name">checkTheIncorrectLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchResultSuitsForParticularAmountOfTourists">
-                  </a> <!-- searchResultSuitsForParticularAmountOfTourists -->
-                  <span class="method-name">searchResultSuitsForParticularAmountOfTourists</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,42 +349,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'choosenDirectionEqualsToDispayedDirection')
-data.setCell(0, 2, 'TravelataRussiaPageTest')
-data.setCell(0, 3, 33789);
+data.setCell(0, 1, 'checkCorrectFilteringToursByBestHotelRating')
+data.setCell(0, 2, 'TravelataSearchPageTest')
+data.setCell(0, 3, 13629);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'filteringTourByDirection')
-data.setCell(1, 2, 'TravelataRussiaPageTest')
-data.setCell(1, 3, 7704);
+data.setCell(1, 1, 'checkCorrectFilteringHotelsBySeaLine')
+data.setCell(1, 2, 'TravelataSearchPageTest')
+data.setCell(1, 3, 13337);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkTheIncorrectLogin')
-data.setCell(2, 2, 'TravelataHomePageTest')
-data.setCell(2, 3, 6214);
+data.setCell(2, 1, 'filteringTourByDirection')
+data.setCell(2, 2, 'TravelataRussiaPageTest')
+data.setCell(2, 3, 7153);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchResultSuitsForParticularAmountOfTourists')
+data.setCell(3, 1, 'checkTheIncorrectLogin')
 data.setCell(3, 2, 'TravelataHomePageTest')
-data.setCell(3, 3, 5127);
+data.setCell(3, 3, 4894);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkCorrectFilteringHotelsBySeaLine')
-data.setCell(4, 2, 'TravelataSearchPageTest')
-data.setCell(4, 3, 4851);
+data.setCell(4, 1, 'searchResultSuitsForParticularAmountOfTourists')
+data.setCell(4, 2, 'TravelataHomePageTest')
+data.setCell(4, 3, 4501);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkCorrectFilteringToursByBestHotelRating')
-data.setCell(5, 2, 'TravelataSearchPageTest')
-data.setCell(5, 3, 4182);
+data.setCell(5, 1, 'checkMailingSubscriptionMessageWithCorrectEmail')
+data.setCell(5, 2, 'TravelataHomePageTest')
+data.setCell(5, 3, 4204);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkMailingSubscriptionMessageWithCorrectEmail')
+data.setCell(6, 1, 'checkChangingCityCorrectness')
 data.setCell(6, 2, 'TravelataHomePageTest')
-data.setCell(6, 3, 4096);
+data.setCell(6, 3, 3233);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkChangingCityCorrectness')
-data.setCell(7, 2, 'TravelataHomePageTest')
-data.setCell(7, 3, 2773);
+data.setCell(7, 1, 'choosenDirectionEqualsToDispayedDirection')
+data.setCell(7, 2, 'TravelataRussiaPageTest')
+data.setCell(7, 3, 3230);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -355,101 +417,107 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkChangingCityCorrectness</span>
-                <span class="method-start">1460 ms</span>
+                <span class="method-start">1618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">4562 ms</span>
+                <span class="method-start">5019 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5122 ms</span>
+                <span class="method-start">5653 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkMailingSubscriptionMessageWithCorrectEmail</span>
-                <span class="method-start">6172 ms</span>
+                <span class="method-start">6717 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">10448 ms</span>
+                <span class="method-start">10968 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11014 ms</span>
+                <span class="method-start">11518 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkTheIncorrectLogin</span>
-                <span class="method-start">12062 ms</span>
+                <span class="method-start">12625 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">18690 ms</span>
+                <span class="method-start">17601 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19256 ms</span>
+                <span class="method-start">18161 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">searchResultSuitsForParticularAmountOfTourists</span>
-                <span class="method-start">20301 ms</span>
+                <span class="method-start">19238 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">25709 ms</span>
+                <span class="method-start">23908 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TravelataRussiaPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26277 ms</span>
+                <span class="method-start">24464 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">choosenDirectionEqualsToDispayedDirection</span>
-                <span class="method-start">27325 ms</span>
+                <span class="method-start">25573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">61652 ms</span>
+                <span class="method-start">28975 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">62209 ms</span>
+                <span class="method-start">29541 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">filteringTourByDirection</span>
-                <span class="method-start">63243 ms</span>
+                <span class="method-start">30586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">71247 ms</span>
+                <span class="method-start">37848 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TravelataSearchPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">71817 ms</span>
+                <span class="method-start">38401 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkCorrectFilteringHotelsBySeaLine</span>
-                <span class="method-start">72881 ms</span>
+                <span class="method-start">39447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">78020 ms</span>
+                <span class="method-start">52880 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">78581 ms</span>
+                <span class="method-start">53434 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkCorrectFilteringToursByBestHotelRating</span>
-                <span class="method-start">79676 ms</span>
+                <span class="method-start">54496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">84136 ms</span>
+                <span class="method-start">68213 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
